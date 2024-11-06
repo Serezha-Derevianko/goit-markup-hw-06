@@ -24,13 +24,20 @@ text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-margin: 0;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 img {
 display: block;
+max-width: 100%;
+height: auto;
 margin: auto;
 
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -151,7 +158,8 @@ margin-left: auto;
 /*<!---------HERO---------> */
 
 .main-hero {
-padding: 188px 0;
+padding-top: 72px;
+padding-bottom: 72px;
 background: #2e2f42;
 max-width: 1440px;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -390,13 +398,13 @@ margin: 0;
 }
 
 .menu-portfolio {
-padding-left: 16px;
-padding-right: 16px;
+display: flex;
+flex-wrap: wrap;
+gap: 48px;
 
 }
 
 .portfoloio-menu-item {
-
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -782,8 +790,60 @@ margin-right: auto;
   .container {
   max-width: 768px;
   width: 100%;
-   
   }
+
+  /*<!---------HERO(TABLET)---------> */
+
+.main-hero {
+  padding: 188px 0;
+  background: #2e2f42;
+  max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  }
+  
+  
+  .main-hero-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 496px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  }
+  
+  .main-hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none; 
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  
+  .hero-button:hover,
+  .hero-button:focus {
+  background: #404bbf;
+  }
+
+  /* <!--------------INFO(TABLET)--------------> */
 
   .info-section{
 
@@ -854,6 +914,7 @@ text-align: center;
     background-color: #F4F4FD;
     }
     
+
     .main-subtitle {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -938,7 +999,7 @@ text-align: center;
     }
 
     /*<!---------Our Portfolio(TABLET)---------> */
-
+  
 
     .portfolio-section {
       padding-top: 96px;
@@ -1033,6 +1094,59 @@ padding: 0 15px;
 margin: 0 auto;
 }
 
+/*<!---------HERO(DESKTOP)---------> */
+
+.main-hero {
+  padding: 188px 0;
+  background: #2e2f42;
+  max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  }
+  
+  
+  .main-hero-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 496px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  }
+  
+  .main-hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none; 
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  
+  .hero-button:hover,
+  .hero-button:focus {
+  background: #404bbf;
+  }
+
+/* <!--------------INFO(DESKTOP)--------------> */
+
 .info-section {
   padding: 120px 0;
   margin: 0 auto;
@@ -1092,7 +1206,7 @@ margin: 0 auto;
   color: #434455;
   }
 
-  /*<!-------------------Our Team----------------------> */
+  /*<!-----------------Our Team(DESKTOP)--------------------> */
 
   .team-section {
     padding: 120px 0;
@@ -1183,7 +1297,7 @@ margin: 0 auto;
     }
 
 
-   /*<!---------Our Portfolio()----------> */
+   /*<!---------Our Portfolio(DESKTOP)----------> */
 
    .portfolio-section {
     padding-top: 120px;
